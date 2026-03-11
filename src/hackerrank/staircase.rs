@@ -14,3 +14,24 @@ pub fn staircase(n: i32) -> String {
 
     result
 }
+
+
+
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_staircase() {
+        let result = staircase(4);
+
+        let expected =
+"   #
+  ##
+ ###
+####";
+
+        assert_eq!(result, expected);
+    }
+}
